@@ -1,0 +1,15 @@
+{
+    "name": "simple-prompt-bot",
+    "padlock": "",
+    "version": "2.0",
+    "services": [
+        {
+            "type": "endpoint",
+            "name": "development",
+            "id": "1",
+            "appId": "4129deeb-9681-4178-b23a-dde4b6e4d393",
+            "appPassword": "2pe1ld0/gOBOoxAukIEt9PwiZKtRJpSYvuJZazQnniQ=",
+            "endpoint": "http://localhost:3978/api/messages"
+        }
+    ]
+}
