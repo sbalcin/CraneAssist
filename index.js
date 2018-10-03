@@ -33,8 +33,8 @@ server.listen(process.env.port || process.env.PORT || 3978, function() {
 // Create adapter. See https://aka.ms/about-bot-adapter to learn more about .bot file its use and bot configuration .
 
 const adapter = new BotFrameworkAdapter({
-    appId: '59426496-d3c9-42f3-9571-f189c383b5d4',
-    appPassword: 'C8HMBFRcAv6wuGNOnG+Tb6HXRN9oVT1my6KgjUrsFfQ='
+    appId: '1cd80600-ec4a-4b67-b0a0-64a52c1f1dc2',
+    appPassword: 'ryfJUGVM7244@+huviQB9?}'
 });
 
 // Define state store for your bot. See https://aka.ms/about-bot-state to learn more about using MemoryStorage.
