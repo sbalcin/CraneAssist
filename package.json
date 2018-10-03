@@ -1,5 +1,5 @@
 {
-  "name": "echobot-with-counter",
+  "name": "CraneAssist",
   "version": "1.0.0",
   "description": "Bot Builder v4 echo bot sample",
   "main": "index.js",
