@@ -5,11 +5,11 @@
     "services": [
         {
             "type": "endpoint",
-            "name": "development",
+            "name": "production",
             "id": "1",
-            "appId": "",
-            "appPassword": "",
-            "endpoint": "http://localhost:3978/api/messages"
+            "appId": "1cd80600-ec4a-4b67-b0a0-64a52c1f1dc2",
+            "appPassword": "ryfJUGVM7244@+huviQB9?}",
+            "endpoint": "https://craneassist.azurewebsites.net/api/messages"
         }
     ]
 }
