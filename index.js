@@ -32,7 +32,7 @@ try {
     // Read bot configuration from .bot file.
     botConfig = BotConfiguration.loadSync(BOT_FILE, process.env.botFileSecret);
 } catch (err) {
-    console.error(`\nError reading bot file. Please ensure you have valid botFilePath and botFileSecret set for your environment.`);
+    console.error(`\nError reading bot file. Please ensure you have valid botFilePath and botFileSecret set for your environment --.`);
     console.error(`\n - The botFileSecret is available under appsettings for your Azure Bot Service bot.`);
     console.error(`\n - If you are running this bot locally, consider adding a .env file with botFilePath and botFileSecret.\n\n`);
     process.exit();
