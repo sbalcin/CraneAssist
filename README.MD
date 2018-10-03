@@ -1,41 +1,28 @@
-This sample creates an echo bot that also welcomes user when they join the conversation. The welcoming pattern shown in this bot is applicable for personal (1:1) conversation with bots. 
+This sample shows how to use the prompts classes included in `botbuilder-dialogs`. This bot will ask for the user's name, then store the response. It demonstrates a 2-step dialog flow using a prompt, as well as using the state accessors to store and retrieve values.
 
 # To try this sample
 - Clone the repository
     ```bash
-    git clone https://github.com/Microsoft/botbuilder-samples.git
+    git clone https://github.com/microsoft/botbuilder-samples.git
     ```
-- In a terminal, 
+- In a terminal, navigate to samples/javascript_nodejs/04.simple-prompt
     ```bash
-    cd samples/javascript_nodejs/03.welcome-users
+    cd samples/javascript_nodejs/04.simple-prompt
     ```
-- [Optional] Update the .env file under samples/javascript_nodejs/08.suggested-actions with your botFileSecret
-    For Azure Bot Service bots, you can find the botFileSecret under application settings.
 - Install modules and start the bot
     ```bash
     npm i & npm start
     ```
-    Alternatively you can also use nodemon via
-    ```bash
-    npm i & npm run watch
-    ```
 
-# Testing the bot using Bot Framework Emulator V4
-Microsoft Bot Framework Emulator is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel.
+# Testing the bot using Bot Framework Emulator
+[Microsoft Bot Framework Emulator](https://github.com/microsoft/botframework-emulator) is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel.
 
-- Install the Bot Framework Emulator from [here](https://aka.ms/botframework-emulator)
+- Install the Bot Framework emulator from [here](https://aka.ms/botframework-emulator)
 
 ## Connect to bot using Bot Framework Emulator V4
 - Launch Bot Framework Emulator
-- File -> Open Bot Configuration and navigate to samples/javascript_nodejs/03.Welcome-Users folder
-- Select Welcome-Users.bot file
-
-# ConversationUpdate Activity Type
-The [ConversationUpdate](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-activity-spec?view=azure-bot-service-3.0#conversation-update-activity) Activity describes a change in conversation members, for example when a new user (and/or) a bot joins the conversation. The channel sends this activity when a user (and/or) bot joins the conversation. It is recommended that you test your bot behavior on the target channel. 
-
-Bots that are added directly by a user, are mostly personal (1:1) conversation bots. It is a best practice to send a welcome message to introduce the bot tell a bit about its functionality. To do this, ensure that your bot responds to the `ConversationUpdate` message. Use the `membersAdded` field to identify the list of channel participants (bots or users) that were added to the conversation.
-
-Your bot may proactively send a welcome message to a personal chat the first time a user initiates a personal chat with your bot. Use `UserState` to persist a flag indicating first user interaction with a bot. 
+- File -> Open Bot Configuration and navigate to samples/javascript_nodejs/04.simple-prompt-bot
+- Select simple-prompt-bot.bot file
 
 # Deploy this bot to Azure
 You can use the [MSBot](https://github.com/microsoft/botbuilder-tools) Bot Builder CLI tool to clone and configure any services this sample depends on. 
@@ -53,9 +40,15 @@ To clone this bot, run
 msbot clone services -f deploymentScripts/msbotClone -n <BOT-NAME> -l <Azure-location> --subscriptionId <Azure-subscription-id>
 ```
 
-# Further reading
-- [Azure Bot Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
-- [Bot State](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-storage-concept?view=azure-bot-service-4.0)
-- [Write directly to storage](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-storage?view=azure-bot-service-4.0&tabs=jsechoproperty%2Ccsetagoverwrite%2Ccsetag)
-- [Managing conversation and user state](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-state?view=azure-bot-service-4.0&tabs=js)
+# Prompts
 
+A conversation between a bot and a user often involves asking (prompting) the user for information, parsing the user's response, and then acting on that information. This sample demonstrates how to prompt users for information using the different prompt types included in the [botbuilder-dialogs](https://github.com/Microsoft/botbuilder-js/tree/master/libraries/botbuilder-dialogs) library and supported by the SDK.
+
+The `botbuilder-dialogs` library includes a variety of pre-built prompt classes, including text, number, and datetime types. This sample demonstrates using a single text prompt to collect the user's name. For an example that uses multiple prompts of different types, see [sample 5](../05.multi-turn-prompt/).
+
+# Further reading
+- [Prompt types](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-prompts?view=azure-bot-service-4.0&tabs=javascript)
+- [Azure Bot Service Introduction](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
+- [Bot basics](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0)
+- [Channels and Bot Connector service](https://docs.microsoft.com/en-us/azure/bot-service/bot-concepts?view=azure-bot-service-4.0)
+- [Activity processing](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-activity-processing?view=azure-bot-service-4.0)

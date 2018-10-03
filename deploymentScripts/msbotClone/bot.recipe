@@ -11,22 +11,22 @@
       "type": "endpoint",
       "id": "2",
       "name": "production",
-      "url": "https://craneassist.azurewebsites.net/api/messages"
+      "url": "https://your-bot-url.azurewebsites.net/api/messages"
     },
     {
       "type": "abs",
       "id": "3",
-      "name": "welcome-Bot"
+      "name": "prompt-Bot"
     },
     {
       "type": "appInsights",
       "id": "4",
-      "name": "welcome-Insights"
+      "name": "prompt-Insights"
     },
     {
       "type": "blob",
       "id": "5",
-      "name": "welcome-Blob",
+      "name": "prompt-Blob",
       "container": "botstatestore"
     }
   ]
