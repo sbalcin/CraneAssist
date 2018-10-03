@@ -9,7 +9,7 @@
             "id": "1",
             "appId": "4129deeb-9681-4178-b23a-dde4b6e4d393",
             "appPassword": "2pe1ld0/gOBOoxAukIEt9PwiZKtRJpSYvuJZazQnniQ=",
-            "endpoint": "http://localhost:3978/api/messages"
+            "endpoint": "https://craneassist.azurewebsites.net/api/messages"
         }
     ]
 }
