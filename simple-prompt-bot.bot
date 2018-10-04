@@ -7,9 +7,9 @@
             "type": "endpoint",
             "name": "production",
             "id": "1",
-            "appId": "1cd80600-ec4a-4b67-b0a0-64a52c1f1dc2",
-            "appPassword": "ryfJUGVM7244@+huviQB9?}",
-            "endpoint": "https://craneassist.azurewebsites.net/api/messages"
+            "appId": "f116ae1c-1525-4e8c-9f88-23c6aecde994",
+            "appPassword": "vbgkIRPS468***gknSJR71[",
+            "endpoint": "https://hititcsbot.azurewebsites.net/api/messages"
         }
     ]
 }
