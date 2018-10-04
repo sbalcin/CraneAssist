@@ -9,7 +9,7 @@
             "id": "1",
             "appId": "f116ae1c-1525-4e8c-9f88-23c6aecde994",
             "appPassword": "vbgkIRPS468***gknSJR71[",
-            "endpoint": "https://hititcsbot.azurewebsites.net/api/messages"
+            "endpoint": "https://hcsbot.azurewebsites.net/api/messages"
         }
     ]
 }
