@@ -11,7 +11,7 @@
       "type": "endpoint",
       "id": "2",
       "name": "production",
-      "url": "https://craneassist.azurewebsites.net/api/messages"
+      "url": "https://hcsbot.azurewebsites.net/api/messages"
     },
     {
       "type": "abs",
