@@ -45,7 +45,7 @@ class SimplePromptBot {
 
     // The first step in this waterfall asks the user for their name.
     async askForName(dc, step) {
-        return await dc.prompt(NAME_PROMPT, `What is your name, human?`);
+        return await dc.prompt(NAME_PROMPT, `Bilet mi almak istiyor sunuz ?`);
     }
 
     // The second step in this waterfall collects the response, stores it in
@@ -110,7 +110,7 @@ class SimplePromptBot {
                     // bot was added to the conversation, and the opposite indicates this is a user.
                     if (turnContext.activity.membersAdded[idx].id !== turnContext.activity.recipient.id) {
                         // Send a "this is what the bot does" message to this user.
-                        await turnContext.sendActivity('Hey Kemal,  I am a bot that demonstrates the TextPrompt class to collect your name, store it in UserState, and display it. Say anything to continue.');
+                        await turnContext.sendActivity('Selam, hitit bünyesindeki süreçlerin yürütülmesinde kullanılacak bir botum. Size nasıl yardımcı olabilirim ?');
                     }
                 }
             }
