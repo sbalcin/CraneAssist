@@ -110,7 +110,7 @@ class SimplePromptBot {
                     // bot was added to the conversation, and the opposite indicates this is a user.
                     if (turnContext.activity.membersAdded[idx].id !== turnContext.activity.recipient.id) {
                         // Send a "this is what the bot does" message to this user.
-                        await turnContext.sendActivity('Sen sor ben anlatayım Tuyji  : ) ');
+                        await turnContext.sendActivity('Hey Kemal,  I am a bot that demonstrates the TextPrompt class to collect your name, store it in UserState, and display it. Say anything to continue.');
                     }
                 }
             }
